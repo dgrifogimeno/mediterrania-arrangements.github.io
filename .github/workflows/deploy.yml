@@ -26,6 +26,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+        continue-on-error: false  # No continuar si ocurre un error
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
