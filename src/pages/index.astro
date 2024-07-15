@@ -1,0 +1,60 @@
+---
+import { HeroSlider1, HeroSlider2, HeroSlider3, BackgroundImg1 } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+---
+
+<Layout
+    title="Mediterrània Arrangements | Homepage"
+    description="Els millors arranjaments amb aroma Mediterrani"
+>
+    <main class="page-content">
+        <Hero
+            client:load
+            heroType="fullPageSlider"
+            data={[
+                {
+                    subtitle: "",
+                    title: "MEDITERRÀNIA ÉS UNA FESTA",
+                    background: BackgroundImg1.src,
+                    paragraph:
+                        "",
+                    button: {
+                        text: "Anar al lloc",
+                        link: "https://codexcode.store/themes/cybernetic-website-template",
+                    },
+                },
+                {
+                    subtitle: "",
+                    title: "UNA CANÇÓ SENSE SENTIT",
+                    background: HeroSlider3.src,
+                    paragraph: "Descobreix els millors arranjaments amb aroma Mediterrani",
+                    button: {
+                        text: "Veure els arranjaments",
+                        link: "/infinite",
+                    },
+                },
+                {
+                    subtitle: "",
+                    title: "MEDITERRÀNIA ÉS LA TENDRESA",
+                    background: HeroSlider2.src,
+                    paragraph: "Anima't i puja el vídeo de la teua xaranga interpretant els nostres arranjaments",
+                    button: {
+                        text: "COMPARTEIX",
+                        link: "/infinite",
+                    },
+                },
+                {
+                    subtitle: "",
+                    title: "MEDITERRÀNIA EL NOSTRE CRIT!",
+                    background: HeroSlider2.src,
+                    paragraph: "Contacta per obtenir els arranjaments amb les cançons que vullguis",
+                    button: {
+                        text: "CONTACTA",
+                        link: "/infinite",
+                    },
+                },
+            ]}
+        />
+    </main>
+</Layout>
